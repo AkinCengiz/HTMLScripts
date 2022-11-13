@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Class Özelliği</title>
+<style type="text/css">
+/*box-shadow özelliği : html elemanı için tanımlı olan kutuya gölge efekti vermek için kullanılır.
+Kullanımı : 
+none|<shadow>[,<shadow>]* şeklindedir...*/
+div
+{
+	float:left;
+	width:150px;
+	height:100px;
+	margin:5px;
+	/*Safari ve chrome alt sürümleri için*/
+	-webkit-box-shadow:inset 1px 1px 20px 2px rgba(23,34,234,0.5);
+	/*firefox 4.0 alt sürümleri için*/
+	-moz-box-shadow:inset 1px 1px 20px 2px rgba(23,34,234,0.5);
+	/*css3 box-shadow özelliği */
+	box-shadow:inset 1px 1px 20px 2px rgba(23,34,234,0.5);
+	}
+	.box1
+	{
+		font-size:14px;
+	}
+	.box2
+	{
+		font-size:20px;
+	}
+	</style>
+</head>
+
+<body>
+<div class="box1">
+Birinci Div elemanı</div>
+<div class="box2">
+İkinci div elemanı</div>
+</body>
+</html>
